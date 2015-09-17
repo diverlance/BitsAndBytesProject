@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <title>Assignment01 Team:Bits&Bytes</title>
+  </head>
+
+  <body>
+    <h1>Bits&Bytes Team Member Search</h1>
+    <form action="form.php" method="get">
+        <fieldset>
+          <legend>User Input</legend>
+          <p>
+              <label>First name: </label>
+              <input name="firstName" type="text" />
+          </p>
+          <p>
+              <label>Last name: </label>
+              <input name="lastName" type="text" />
+          </p>
+          <p>
+            <label>Gender: </label>
+            <input name="gender" type="radio" value="Male" checked /> Male
+            <input name="gender" type="radio" value="Female" /> Female
+          </p>
+          <p>
+            <label>Major </label>
+            <select name="major">
+              <option value="Computer Science" selected>Computer Science</option>
+              <option value="Software Engineering">Software Engineering</option>
+            </select>
+          </p>
+          <p>
+            <label>Display phone# on result?</label>
+              <input name="phone" type="checkbox" value="true" /> Yes!
+          </p>
+          <p>
+              <input type="submit" value="Submit" />
+          </p>
+        </fieldset>
+    </form>
+  </body>
+</html>
