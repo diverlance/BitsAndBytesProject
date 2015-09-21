@@ -2,21 +2,23 @@
 <html lang="en-US">
   <head>
     <meta charset="UTF-8">
-    <title>Assignment01 Team:Bits&Bytes</title>
+    <title>Team:Bits&Bytes</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
   </head>
 
   <body>
-    <h1>Bits&Bytes Team Member Search</h1>
+    <img src='http://www.classic-computers.org.nz/bits-and-bytes/logo.jpg'>
+    <h1 class="title">Bits & Bytes Team Member Search</h1>
     <form action="form.php" method="get">
         <fieldset>
           <legend>User Input</legend>
           <p>
-              <label>First name: </label>
-              <input name="firstName" type="text" />
+              <label class='name'>First name </label>
+              <input name="firstName" type="text" autocomplete='off' />
           </p>
           <p>
-              <label>Last name: </label>
-              <input name="lastName" type="text" />
+              <label class='name'>Last name </label>
+              <input name="lastName" type="text" autocomplete='off' />
           </p>
           <p>
             <label>Gender: </label>
@@ -35,7 +37,7 @@
               <input name="phone" type="checkbox" value="true" /> Yes!
           </p>
           <p>
-              <input type="submit" value="Submit" />
+              <input class='submit' type="submit" value="Submit" />
           </p>
         </fieldset>
     </form>

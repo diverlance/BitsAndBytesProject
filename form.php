@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Team Members</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 
 <body>
-    <h1>Team Member</h1>
+    <h1 class="title">Team Member</h1>
     <p>
         <?php
             $first = filter_input(INPUT_GET, "firstName");
