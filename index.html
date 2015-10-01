@@ -8,10 +8,26 @@
 
   <body>
     <img src='http://www.classic-computers.org.nz/bits-and-bytes/logo.jpg'>
-    <h1 class="title">Bits & Bytes Team Member Search</h1>
+    <h1 class="title">Bits & Bytes Team Members</h1>
+    <form action="join.php" method="get">
+        <fieldset>
+          <legend>Member's Class Schedule</legend>
+          <p>
+              <label class='name'>First name </label>
+              <input name="firstName" type="text" autocomplete='off' />
+          </p>
+          <p>
+              <label class='name'>Last name </label>
+              <input name="lastName" type="text" autocomplete='off' />
+          </p>
+          <p>
+              <input class='submit' type="submit" value="Submit" />
+          </p>
+        </fieldset>
+    </form>
     <form action="form.php" method="get">
         <fieldset>
-          <legend>User Input</legend>
+          <legend>Member's Contact Information</legend>
           <p>
               <label class='name'>First name </label>
               <input name="firstName" type="text" autocomplete='off' />
