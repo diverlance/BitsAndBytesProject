@@ -18,7 +18,7 @@
 
             try
             {
-                $con = new PDO("mysql:host=localhost;dbname=Assignment1", "root", "G0Sharks");
+                $con = new PDO("mysql:host=localhost;dbname=homework", "root", "");
                 $con->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
                 if ((strlen($first) > 0) && (strlen($last) > 0))
                 {

@@ -14,7 +14,7 @@
             $last  = filter_input(INPUT_GET, "lastName");
             try
             {
-                $con = new PDO("mysql:host=127.0.0.1;dbname=hw1", "USERNAME", "PASSWORD");
+                $con = new PDO("mysql:host=127.0.0.1;dbname=homework", "root", "");
                 $con->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
                 if ((strlen($first) > 0) && (strlen($last) > 0))
                 {
