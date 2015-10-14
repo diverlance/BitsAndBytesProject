@@ -4,104 +4,39 @@
     <title>Team:Bits&Bytes</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
     <script src="validation.js"></script>
-
     </head>
 
   <body>
-  <img src='http://www.classic-computers.org.nz/bits-and-bytes/logo.jpg'>
     <h1 class="title">Bits & Bytes Team Members</h1>
     <form action="" method="">
         <! new ADD Member form Here -->
-            <h2 class="add-member">Add New Member</h2>
+            <h2 class="add-member">login Information</h2>
             <p class="fields">
                 <div class="row">
-                    <label for="first-name">First Name</label>
+                    <label for="first_name">First Name</label>
                     <input type="text"
                            id = "first_name" name="first_name" class="field-large" />
                 </div>
 
                 <div class="row">
-                    <label for="last-name">Last Name</label>
+                    <label for="last_name">Last Name</label>
                     <input type="text"
                            id = "last_name" name="last_name" class="field-large" />
                 </div>
 
-                <p class="row">
-                    <label for="gender">Gender</label>
-                    <input type="radio" value="male" name="gender"/>
-                    Male
-                    <input type="radio" value="female" name="gender"/>
-                    Female
-                </p>
 
                 <p class="row">
                     <label for="email">Email</label>
                     <input type="text" name="email" id="email"
-                           placeholder="yourname@example.com" />
-                </p>
-
-                <p class="row">
-                    <label for="telephone">Phone</label>
-                    <input type="text"
-                            placeholder="(999)999-9999"
-                            name="phone"
-                            class="field-large"
-                           id="phone"
-                            />
+                           placeholder="yourname@example.com"
+                            class="field-large"/>
                 </p>
                 <p>
-                <input type="submit" class="btn" value="Submit">
+                <input type="submit" class="btn" value="Submit" onclick="validate()";>
                 </p>
             </div>
         </fieldset>
         </form>
-    <form action="join.php" method="get">
-        <fieldset>
-          <h2 class="class-schedule">Member's Class Schedule</h2>
-          <p class="row">
-              <label class='name'>First name </label>
-              <input name="firstName" type="text" autocomplete='off' />
-          </p>
-          <p class="row">
-              <label class='name'>Last name </label>
-              <input name="lastName" type="text" autocomplete='off' />
-          </p>
-          <p>
-              <input class='btn' type="submit" value="Submit" />
-          </p>
-        </fieldset>
-    </form>
-    <form action="form.php" method="get">
-        <fieldset>
-          <h2 class="contact-info">Member's Contact Information</h2>
-          <p class="row">
-              <label class='name'>First name </label>
-              <input name="firstName" type="text" autocomplete='off' />
-          </p>
-          <p>
-              <label class='name'>Last name </label>
-              <input name="lastName" type="text" autocomplete='off' />
-          </p>
-          <p class="row">
-            <label>Gender: </label>
-            <input name="gender" type="radio" value="Male" checked /> Male
-            <input name="gender" type="radio" value="Female" /> Female
-          </p>
-          <p class="row">
-            <label>Major </label>
-            <select name="major">
-              <option value="Computer Science" selected>Computer Science</option>
-              <option value="Software Engineering">Software Engineering</option>
-            </select>
-          </p>
-          <p class="row">
-            <label>Display phone# on result?</label>
-              <input name="phone" type="checkbox" value="true" /> Yes!
-          </p>
-          <p>
-              <input class='btn' type="submit" value="Submit" />
-          </p>
-        </fieldset>
-    </form>
+
   </body>
 </html>
